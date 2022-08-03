@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Focus-first-text-bar",
+  "version": "1.0.0",
+  "description": "最初に現れるテキストエリアにフォーカスする",
+  "icons": {
+    "16": "icon16.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["main.js"]
+    }
+  ]
+}
