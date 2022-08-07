@@ -1,15 +1,15 @@
 function setup() {
   const target = document.querySelector("textarea");
   chrome.storage.sync.get(null, (items) => {
-    target.value = items.urlList.toString();
+    target.value = items.urlWhiteList.toString().replaceAll(',',',\n');
   });
 }
 
 function setEnteredUrl() {
   const urls = document.querySelector("textarea").value;
-  const urlList = urls.replace(/\s/g, "").split(",");
+  const urlWhiteList = urls.replace(/\s/g, "").split(",");
   const items = {
-    urlList: urlList,
+    urlWhiteList: urlWhiteList,
   };
   chrome.storage.sync.set(items);
 }

@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
     <title>setting</title>
 </head>
 <body>
-    <span>Enter the URLs to which this extension should not apply, separated by commas (,)</span>
+    <span>Enter the domain of the URL you want to apply, separated by commas (,)</span>
     <textarea name="not-apply-urls" cols="30" rows="10"></textarea>
+    <span>
+        (A regular expression with "\/.+/ig" added to the entered URL is applied)
+        <br/>regex: /^.+your-entered-url[/?]+[A-Za-z0-9]?/gi
+    </span>
     <button id="save">save</button>
     <script src="popup.js"></script>
 </body>
