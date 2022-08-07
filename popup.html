@@ -8,12 +8,12 @@
     <title>setting</title>
 </head>
 <body>
-    <span>Enter the domain of the URL you want to apply, separated by commas (,)</span>
+    <p>Enter the domain of the URL you want to apply, separated by commas (,)</p>
     <textarea name="not-apply-urls" cols="30" rows="10"></textarea>
-    <span>
-        (A regular expression with "\/.+/ig" added to the entered URL is applied)
-        <br/>regex: /^.+your-entered-url[/?]+[A-Za-z0-9]?/gi
-    </span>
+    <p>
+        (regex sample)
+        <br/>/^.+<b>your-entered-url</b>[/?]+[A-Za-z0-9]?/gi
+    </p>
     <button id="save">save</button>
     <script src="popup.js"></script>
 </body>
