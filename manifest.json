@@ -3,7 +3,7 @@
   "name": "Focus-first-text-bar",
   "version": "1.0.0",
   "description": "Focus the first textarea that appears",
-  "permissions": ["scripting", "storage"],
+  "permissions": ["storage"],
   "icons": {
     "16": "icon16.png"
   },
